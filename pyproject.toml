@@ -1,0 +1,76 @@
+[tool.poetry]
+name = "aoc2024-py"
+version = "0.1.0"
+description = "AoC2024 in Python"
+authors = ["Jocelyn Legault <jocelynlegault@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+flake8 = "^7.1"
+isort = "^5.13"
+pylint = "^3.3"
+pyright = "^1.1"
+pytest = "^8.3"
+ruff = "^0.7"
+
+[tool.black]
+target-version = ["py312"]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+py_version = "auto"
+skip = ["__pycache__", ".venv", ".git", ".pytest_cache"]
+
+[tool.pylint.'MASTER']
+# To make sure we can access the src directory
+init-hook = 'import sys; sys.path.append("src")'
+
+[tool.pylint.'MESSAGES_CONTROL']
+max-line-length = 88
+disable = [
+    "C0114", # missing-module-docstring
+    "C0115", # missing-class-docstring
+    "C0116", # missing-function-docstring
+    "W1514", # unspecified-encoding
+]
+
+[tool.pyright]
+include = ["src", "tests"]
+exclude = ["**/__pycache__", ".venv/**", ".git/**", ".pytest_cache/**"]
+typeCheckingMode = "strict"
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+testpaths = ["tests"]
+timeout = 10
+
+[tool.ruff]
+exclude = [
+    "__pycache__",
+    ".git",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+]
+
+# Same as Black
+line-length = 88
+indent-width = 4
+# Target our oldest supported Python version
+target-version = "py312"
+
+[tool.ruff.format]
+indent-style = "space"
+line-ending = "lf"
+quote-style = "double"
+skip-magic-trailing-comma = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,13 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "ignorePaths": [".cspell.json", "pyproject.toml", "day*.txt"],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": ["joce", "legault"],
+    "ignoreWords": [],
+    "import": [],
+    "flagWords": ["hte"],
+    "patterns": [],
+    "ignoreRegExpList": []
+}
