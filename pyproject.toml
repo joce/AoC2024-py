@@ -15,7 +15,8 @@ isort = "^5.13"
 pylint = "^3.3"
 pyright = "^1.1"
 pytest = "^8.3"
-ruff = "^0.7"
+pytest-timeout = "^2.1"
+ruff = "^0.8"
 
 [tool.black]
 target-version = ["py312"]
@@ -47,7 +48,7 @@ typeCheckingMode = "strict"
 [tool.pytest.ini_options]
 pythonpath = "src"
 testpaths = ["tests"]
-timeout = 10
+timeout = 0
 
 [tool.ruff]
 exclude = [
