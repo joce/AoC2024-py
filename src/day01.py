@@ -1,7 +1,6 @@
-import os
-import os.path
 import re
-from typing import Callable
+
+from helper import apply_lines_from_file
 
 
 def find_distance_from_string_list(values: list[str]) -> int:
@@ -30,19 +29,12 @@ def extract_data(values: list[str]) -> tuple[list[int], list[int]]:
     return list1, list2
 
 
-def apply_from_file(filename: str, func: Callable[[list[str]], int]) -> None:
-    with open(os.path.join(os.path.dirname(__file__), filename)) as f:
-        lines: list[str] = f.readlines()
-        ret: int = func(lines)
-        print(ret)
-
-
 def part_1() -> None:
-    apply_from_file("day01.txt", find_distance_from_string_list)
+    apply_lines_from_file("day01.txt", find_distance_from_string_list)
 
 
 def part_2() -> None:
-    apply_from_file("day01.txt", compute_similarity_score)
+    apply_lines_from_file("day01.txt", compute_similarity_score)
 
 
 if __name__ == "__main__":
