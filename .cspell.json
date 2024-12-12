@@ -4,7 +4,7 @@
     "ignorePaths": [".cspell.json", "pyproject.toml", "day*.txt"],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": ["joce", "legault"],
+    "words": ["antinodes", "joce", "legault"],
     "ignoreWords": [],
     "import": [],
     "flagWords": ["hte"],
