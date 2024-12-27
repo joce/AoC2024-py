@@ -157,5 +157,5 @@ def part1(s: str) -> int:
 
 
 if __name__ == "__main__":
-    with open(os.path.join(os.path.dirname(__file__), "day15.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day15.txt")) as f:
         print(part1(f.read()))

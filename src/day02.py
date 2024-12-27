@@ -33,11 +33,11 @@ def get_safe_lines_count_damper(lines: list[str]) -> int:
 
 
 def part_1() -> None:
-    apply_lines_from_file("day02.txt", get_safe_lines_count)
+    apply_lines_from_file("../data/day02.txt", get_safe_lines_count)
 
 
 def part_2() -> None:
-    apply_lines_from_file("day02.txt", get_safe_lines_count_damper)
+    apply_lines_from_file("../data/day02.txt", get_safe_lines_count_damper)
 
 
 if __name__ == "__main__":

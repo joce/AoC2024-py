@@ -50,11 +50,11 @@ def find_x_mas(data: list[str]) -> int:
 
 
 def part_1() -> None:
-    apply_lines_from_file("day04.txt", find_xmas)
+    apply_lines_from_file("../data/day04.txt", find_xmas)
 
 
 def part_2() -> None:
-    apply_lines_from_file("day04.txt", find_x_mas)
+    apply_lines_from_file("../data/day04.txt", find_x_mas)
 
 
 if __name__ == "__main__":

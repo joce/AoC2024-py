@@ -61,14 +61,14 @@ def get_sum_of_invalid_sequences(
 
 
 def part_1() -> None:
-    with open(os.path.join(os.path.dirname(__file__), "day05.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day05.txt")) as f:
         pairs, data = parse_input(f.read())
         ret = get_sum_of_valid_sequences(pairs, data)
         print(ret)
 
 
 def part_2() -> None:
-    with open(os.path.join(os.path.dirname(__file__), "day05.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day05.txt")) as f:
         pairs, data = parse_input(f.read())
         ret = get_sum_of_invalid_sequences(pairs, data)
         print(ret)

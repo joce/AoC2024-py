@@ -36,12 +36,12 @@ def trailheads_score(grid: str, count_all: bool = False) -> int:
 
 
 def part_1() -> None:
-    with open(os.path.join(os.path.dirname(__file__), "day10.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day10.txt")) as f:
         print(trailheads_score(f.read()))
 
 
 def part_2() -> None:
-    with open(os.path.join(os.path.dirname(__file__), "day10.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day10.txt")) as f:
         print(trailheads_score(f.read(), True))
 
 

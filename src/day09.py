@@ -115,11 +115,11 @@ def process_layout2(inp: list[str]) -> int:
 
 
 def part1() -> None:
-    apply_lines_from_file("day09.txt", process_layout)
+    apply_lines_from_file("../data/day09.txt", process_layout)
 
 
 def part2() -> None:
-    apply_lines_from_file("day09.txt", process_layout2)
+    apply_lines_from_file("../data/day09.txt", process_layout2)
 
 
 if __name__ == "__main__":

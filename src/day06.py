@@ -107,7 +107,7 @@ def patrol_add_obstacles(grid: list[list[int]]) -> int:
 
 
 def part_1() -> None:
-    with open(os.path.join(os.path.dirname(__file__), "day06.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day06.txt")) as f:
         data = parse_grid(f.read())
         start = perf_counter()
         ret = patrol(data)
@@ -117,7 +117,7 @@ def part_1() -> None:
 
 
 def part_2() -> None:
-    with open(os.path.join(os.path.dirname(__file__), "day06.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day06.txt")) as f:
         data = parse_grid(f.read())
         start = perf_counter()
         ret = patrol_add_obstacles(data)
