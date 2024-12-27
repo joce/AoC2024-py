@@ -97,12 +97,12 @@ def find_easter_egg(s: str, w: int, h: int) -> None:
 
 
 def part1():
-    with open(os.path.join(os.path.dirname(__file__), "day14.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day14.txt")) as f:
         print(get_safety_factor(f.read(), 101, 103, 100))
 
 
 def part2():
-    with open(os.path.join(os.path.dirname(__file__), "day14.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day14.txt")) as f:
         find_easter_egg(f.read(), 101, 103)
 
 

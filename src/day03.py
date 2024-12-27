@@ -39,7 +39,7 @@ def get_sum_do_dont(value: str) -> int:
 
 
 def part_2() -> None:
-    with open(os.path.join(os.path.dirname(__file__), "day03.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day03.txt")) as f:
         ret = get_sum_do_dont(f.read())
         print(ret)
 

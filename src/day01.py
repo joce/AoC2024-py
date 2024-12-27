@@ -30,11 +30,11 @@ def extract_data(values: list[str]) -> tuple[list[int], list[int]]:
 
 
 def part_1() -> None:
-    apply_lines_from_file("day01.txt", find_distance_from_string_list)
+    apply_lines_from_file("../data/day01.txt", find_distance_from_string_list)
 
 
 def part_2() -> None:
-    apply_lines_from_file("day01.txt", compute_similarity_score)
+    apply_lines_from_file("../data/day01.txt", compute_similarity_score)
 
 
 if __name__ == "__main__":

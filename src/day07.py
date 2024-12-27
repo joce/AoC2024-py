@@ -33,14 +33,14 @@ def is_valid2(data: list[int]) -> bool:
 
 
 def part_1() -> None:
-    with open(os.path.join(os.path.dirname(__file__), "day07.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day07.txt")) as f:
         data = prepare_input(f.read())
         ret = sum(d[0] for d in data if is_valid(d))
         print(ret)
 
 
 def part_2() -> None:
-    with open(os.path.join(os.path.dirname(__file__), "day07.txt")) as f:
+    with open(os.path.join(os.path.dirname(__file__), "../data/day07.txt")) as f:
         data = prepare_input(f.read())
         ret = sum(d[0] for d in data if is_valid2(d))
         print(ret)

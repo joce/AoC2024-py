@@ -83,11 +83,11 @@ def find_antinodes_2(grid: list[str]) -> int:
 
 
 def part_1() -> None:
-    apply_lines_from_file("day08.txt", find_antinodes)
+    apply_lines_from_file("../data/day08.txt", find_antinodes)
 
 
 def part_2() -> None:
-    apply_lines_from_file("day08.txt", find_antinodes_2)
+    apply_lines_from_file("../data/day08.txt", find_antinodes_2)
 
 
 if __name__ == "__main__":
