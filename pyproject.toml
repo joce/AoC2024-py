@@ -10,6 +10,7 @@ python = "^3.12"
 ipykernel = "*"
 numpy = "^2.2"
 networkx = "^3.4.2"
+matplotlib = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"
